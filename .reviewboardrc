@@ -1,0 +1,3 @@
+REVIEWBOARD_URL = 'https://reviewboard.wolfgang.com/'
+REPOSITORY = 'Basel Farag - Squirrel'
+TARGET_PEOPLE = 'kjones'
