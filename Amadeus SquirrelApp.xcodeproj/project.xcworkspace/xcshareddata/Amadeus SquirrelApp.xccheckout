@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B645BA56-5B6D-4F4F-B3D7-ED0BE52B4F7F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Amadeus SquirrelApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A099D0B03A437690F4CA5A2013893A4CF248B73B</key>
+		<string>git.wolfgang.com:bfarag/amadeus-squirrelapp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Amadeus SquirrelApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A099D0B03A437690F4CA5A2013893A4CF248B73B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>git.wolfgang.com:bfarag/amadeus-squirrelapp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A099D0B03A437690F4CA5A2013893A4CF248B73B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A099D0B03A437690F4CA5A2013893A4CF248B73B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Amadeus%20SquirrelApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

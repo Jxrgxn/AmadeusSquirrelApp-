@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fUF-Jd-IC6">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Item 2-->
         <scene sceneID="9A4-fl-HGl">
             <objects>
-                <viewController id="1Pr-uF-Hsj" sceneMemberID="viewController">
+                <viewController id="1Pr-uF-Hsj" customClass="ASAAboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c3b-uQ-Oxx"/>
                         <viewControllerLayoutGuide type="bottom" id="yjt-Dh-L7B"/>
@@ -44,6 +45,32 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fqm-nF-z1k" id="enR-Pz-LIg">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf7-5T-Yby">
+                                                    <rect key="frame" x="15" y="23" width="359" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="359" id="3ch-Oh-k1z"/>
+                                                        <constraint firstAttribute="height" constant="20" id="u1X-74-hxo"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Squirrel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYh-YZ-s4O">
+                                                    <rect key="frame" x="15" y="-3" width="359" height="22"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Rf7-5T-Yby" firstAttribute="leading" secondItem="enR-Pz-LIg" secondAttribute="leadingMargin" id="3xf-te-4sS"/>
+                                                <constraint firstItem="qYh-YZ-s4O" firstAttribute="trailing" secondItem="Rf7-5T-Yby" secondAttribute="trailing" id="8Ux-1K-pgE"/>
+                                                <constraint firstItem="Rf7-5T-Yby" firstAttribute="top" secondItem="qYh-YZ-s4O" secondAttribute="bottom" constant="4" id="CQU-OK-jE3"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Rf7-5T-Yby" secondAttribute="bottom" constant="-7.5" id="YLN-1J-JZ5"/>
+                                                <constraint firstItem="qYh-YZ-s4O" firstAttribute="leading" secondItem="Rf7-5T-Yby" secondAttribute="leading" id="tv1-yZ-loP"/>
+                                                <constraint firstItem="qYh-YZ-s4O" firstAttribute="top" secondItem="enR-Pz-LIg" secondAttribute="topMargin" constant="-11" id="vD1-Z8-kaB"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -62,6 +89,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Hap-z4-Vri"/>
+                    <connections>
+                        <outlet property="squirrelListTableView" destination="QBy-ce-l8C" id="mBa-cK-IyH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Suo-Ye-kRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,6 +14,11 @@
 		2565BF1C1B8F7C9700A38A8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2565BF1B1B8F7C9700A38A8D /* Images.xcassets */; };
 		2565BF1F1B8F7C9700A38A8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2565BF1D1B8F7C9700A38A8D /* LaunchScreen.xib */; };
 		2565BF2B1B8F7C9700A38A8D /* Amadeus_SquirrelAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2565BF2A1B8F7C9700A38A8D /* Amadeus_SquirrelAppTests.m */; };
+		2565BF361B8F892B00A38A8D /* ASAAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2565BF351B8F892B00A38A8D /* ASAAboutViewController.m */; };
+		2565BF3A1B90A13C00A38A8D /* ASASquirrelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2565BF391B90A13C00A38A8D /* ASASquirrelModel.m */; };
+		259E80F91B90C33E0059F680 /* ASASquirrelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E80F81B90C33E0059F680 /* ASASquirrelManager.m */; };
+		25E9F81A1B90AFA700B4F2FB /* ASASquirrelInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E9F8191B90AFA700B4F2FB /* ASASquirrelInformationTableViewCell.m */; };
+		A83F9DD8443F12C398F2C74F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE72655D3C9FD03B2CBD99EB /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A35549ABB08FB5D7EB13BBC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2565BF0B1B8F7C9700A38A8D /* Amadeus SquirrelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amadeus SquirrelApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2565BF0F1B8F7C9700A38A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2565BF101B8F7C9700A38A8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +46,16 @@
 		2565BF241B8F7C9700A38A8D /* Amadeus SquirrelAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amadeus SquirrelAppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2565BF291B8F7C9700A38A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2565BF2A1B8F7C9700A38A8D /* Amadeus_SquirrelAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Amadeus_SquirrelAppTests.m; sourceTree = "<group>"; };
+		2565BF341B8F892B00A38A8D /* ASAAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAAboutViewController.h; sourceTree = "<group>"; };
+		2565BF351B8F892B00A38A8D /* ASAAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAAboutViewController.m; sourceTree = "<group>"; };
+		2565BF381B90A13C00A38A8D /* ASASquirrelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASASquirrelModel.h; sourceTree = "<group>"; };
+		2565BF391B90A13C00A38A8D /* ASASquirrelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASASquirrelModel.m; sourceTree = "<group>"; };
+		259E80F71B90C33E0059F680 /* ASASquirrelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASASquirrelManager.h; sourceTree = "<group>"; };
+		259E80F81B90C33E0059F680 /* ASASquirrelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASASquirrelManager.m; sourceTree = "<group>"; };
+		25E9F8181B90AFA700B4F2FB /* ASASquirrelInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASASquirrelInformationTableViewCell.h; sourceTree = "<group>"; };
+		25E9F8191B90AFA700B4F2FB /* ASASquirrelInformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASASquirrelInformationTableViewCell.m; sourceTree = "<group>"; };
+		AE72655D3C9FD03B2CBD99EB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE0BFFD5215BCC2423B30BAE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83F9DD8443F12C398F2C74F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +77,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BAAF8AB2D91ECC11C26A541 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE72655D3C9FD03B2CBD99EB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2565BF021B8F7C9700A38A8D = {
 			isa = PBXGroup;
 			children = (
 				2565BF0D1B8F7C9700A38A8D /* Amadeus SquirrelApp */,
 				2565BF271B8F7C9700A38A8D /* Amadeus SquirrelAppTests */,
 				2565BF0C1B8F7C9700A38A8D /* Products */,
+				E1E5F77F0138A6AEA4408B7C /* Pods */,
+				1BAAF8AB2D91ECC11C26A541 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +108,13 @@
 		2565BF0D1B8F7C9700A38A8D /* Amadeus SquirrelApp */ = {
 			isa = PBXGroup;
 			children = (
+				259E80F71B90C33E0059F680 /* ASASquirrelManager.h */,
+				259E80F81B90C33E0059F680 /* ASASquirrelManager.m */,
 				2565BF121B8F7C9700A38A8D /* AppDelegate.h */,
 				2565BF131B8F7C9700A38A8D /* AppDelegate.m */,
-				2565BF151B8F7C9700A38A8D /* ASAInformationTabViewController.h */,
-				2565BF161B8F7C9700A38A8D /* ASAInformationTabViewController.m */,
+				25E9F81B1B90AFAF00B4F2FB /* Views */,
+				2565BF3B1B90A47C00A38A8D /* Models */,
+				2565BF371B8F897900A38A8D /* Controllers */,
 				2565BF181B8F7C9700A38A8D /* Main.storyboard */,
 				2565BF1B1B8F7C9700A38A8D /* Images.xcassets */,
 				2565BF1D1B8F7C9700A38A8D /* LaunchScreen.xib */,
@@ -119,6 +149,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2565BF371B8F897900A38A8D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2565BF151B8F7C9700A38A8D /* ASAInformationTabViewController.h */,
+				2565BF161B8F7C9700A38A8D /* ASAInformationTabViewController.m */,
+				2565BF341B8F892B00A38A8D /* ASAAboutViewController.h */,
+				2565BF351B8F892B00A38A8D /* ASAAboutViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2565BF3B1B90A47C00A38A8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2565BF381B90A13C00A38A8D /* ASASquirrelModel.h */,
+				2565BF391B90A13C00A38A8D /* ASASquirrelModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		25E9F81B1B90AFAF00B4F2FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25E9F8181B90AFA700B4F2FB /* ASASquirrelInformationTableViewCell.h */,
+				25E9F8191B90AFA700B4F2FB /* ASASquirrelInformationTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E1E5F77F0138A6AEA4408B7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A35549ABB08FB5D7EB13BBC /* Pods.debug.xcconfig */,
+				DE0BFFD5215BCC2423B30BAE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2565BF2E1B8F7C9700A38A8D /* Build configuration list for PBXNativeTarget "Amadeus SquirrelApp" */;
 			buildPhases = (
+				46E823ED58FA8B95AC8B3C2F /* Check Pods Manifest.lock */,
 				2565BF071B8F7C9700A38A8D /* Sources */,
 				2565BF081B8F7C9700A38A8D /* Frameworks */,
 				2565BF091B8F7C9700A38A8D /* Resources */,
+				1F8BD618E3762BA8A1C8BD5D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,14 +284,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F8BD618E3762BA8A1C8BD5D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46E823ED58FA8B95AC8B3C2F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2565BF071B8F7C9700A38A8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2565BF171B8F7C9700A38A8D /* ASAInformationTabViewController.m in Sources */,
+				2565BF3A1B90A13C00A38A8D /* ASASquirrelModel.m in Sources */,
 				2565BF141B8F7C9700A38A8D /* AppDelegate.m in Sources */,
+				259E80F91B90C33E0059F680 /* ASASquirrelManager.m in Sources */,
+				2565BF361B8F892B00A38A8D /* ASAAboutViewController.m in Sources */,
 				2565BF111B8F7C9700A38A8D /* main.m in Sources */,
+				25E9F81A1B90AFA700B4F2FB /* ASASquirrelInformationTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +454,7 @@
 		};
 		2565BF2F1B8F7C9700A38A8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A35549ABB08FB5D7EB13BBC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Amadeus SquirrelApp/Info.plist";
@@ -357,6 +465,7 @@
 		};
 		2565BF301B8F7C9700A38A8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE0BFFD5215BCC2423B30BAE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Amadeus SquirrelApp/Info.plist";

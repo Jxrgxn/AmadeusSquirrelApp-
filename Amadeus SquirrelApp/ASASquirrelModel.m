@@ -10,28 +10,38 @@
 
 @interface ASASquirrelModel ()
 
+#define nilOrJSONObjectForKey(JSON_, KEY_) [[JSON_ objectForKey:KEY_] isKindOfClass:[NSNull class]] ? nil : [JSON_ objectForKey:KEY_]
+
 @end
 
 @implementation ASASquirrelModel
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+
+
+-(void)setSquirrelInfoWithDict:(NSDictionary *)dict{
+    self.title             = nilOrJSONObjectForKey(dict, @"author");
+    self.desc              = nilOrJSONObjectForKey(dict, @"categories");
+    self.title             = nilOrJSONObjectForKey(dict, @"title");
+    self.image             = nilOrJSONObjectForKey(dict, @"image");
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+/**
+ * Helper function to url encode a string
+ */
+- (NSString *)urlencode:(NSString*)str {
+    if (str==nil) {
+        return @"";
+    }
+    NSString *encodedString = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(
+                                                                                                    NULL,
+                                                                                                    (CFStringRef)str,
+                                                                                                    NULL,
+                                                                                                    (CFStringRef)@"!*'();:@&=+$,/?%#[]",
+                                                                                                    kCFStringEncodingUTF8 ));
+    return encodedString;
 }
-*/
 
 @end

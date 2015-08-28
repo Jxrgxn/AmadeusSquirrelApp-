@@ -7,8 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASASquirrelModel.h"
 
 @interface ASAInformationTabViewController : UIViewController
+
+/**
+* The squirrel to display.
+*/
+@property (nonatomic, strong) ASASquirrelModel* squirrelExampleObject;
+
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *squirrelDescLabel;
+@property (strong, nonatomic) IBOutlet UIImage *squirrelImage;
+
 
 
 @end

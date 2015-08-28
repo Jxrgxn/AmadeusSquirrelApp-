@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ASASquirrelModel : UIViewController
+@interface ASASquirrelModel : NSObject
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *url;
+@property (nonatomic, strong) NSString *desc;
+@property (nonatomic, strong) UIImageView *image;
+
+/**
+ * Setup the squirrel entry info with given dictionary.
+ */
+-(void)setSquirrelInfoWithDict:(NSDictionary*)dict;
+
+/**
+ * Returns a string containing this string information that is URL encoded.
+ * Note the url parameter is not included.
+ */
+
 
 @end
