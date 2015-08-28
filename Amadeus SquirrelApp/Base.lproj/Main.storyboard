@@ -36,42 +36,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QBy-ce-l8C">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="98" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QBy-ce-l8C">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fqm-nF-z1k">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="squirrelIdentifier" rowHeight="98" id="fqm-nF-z1k" customClass="ASASquirrelInformationTableViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fqm-nF-z1k" id="enR-Pz-LIg">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf7-5T-Yby">
-                                                    <rect key="frame" x="15" y="23" width="359" height="20"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Pi-LA-6Zh">
+                                                    <rect key="frame" x="18" y="8" width="78" height="85"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="359" id="3ch-Oh-k1z"/>
-                                                        <constraint firstAttribute="height" constant="20" id="u1X-74-hxo"/>
+                                                        <constraint firstAttribute="width" constant="78" id="L1i-Mx-m9H"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIz-ao-HYY">
+                                                    <rect key="frame" x="104" y="62" width="479" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Squirrel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYh-YZ-s4O">
-                                                    <rect key="frame" x="15" y="-3" width="359" height="22"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWc-oc-L1M">
+                                                    <rect key="frame" x="104" y="20" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="XhQ-eS-bEM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Rf7-5T-Yby" firstAttribute="leading" secondItem="enR-Pz-LIg" secondAttribute="leadingMargin" id="3xf-te-4sS"/>
-                                                <constraint firstItem="qYh-YZ-s4O" firstAttribute="trailing" secondItem="Rf7-5T-Yby" secondAttribute="trailing" id="8Ux-1K-pgE"/>
-                                                <constraint firstItem="Rf7-5T-Yby" firstAttribute="top" secondItem="qYh-YZ-s4O" secondAttribute="bottom" constant="4" id="CQU-OK-jE3"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Rf7-5T-Yby" secondAttribute="bottom" constant="-7.5" id="YLN-1J-JZ5"/>
-                                                <constraint firstItem="qYh-YZ-s4O" firstAttribute="leading" secondItem="Rf7-5T-Yby" secondAttribute="leading" id="tv1-yZ-loP"/>
-                                                <constraint firstItem="qYh-YZ-s4O" firstAttribute="top" secondItem="enR-Pz-LIg" secondAttribute="topMargin" constant="-11" id="vD1-Z8-kaB"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="qIz-ao-HYY" secondAttribute="trailing" constant="2" id="0d0-l8-TPg"/>
+                                                <constraint firstItem="mWc-oc-L1M" firstAttribute="top" secondItem="enR-Pz-LIg" secondAttribute="topMargin" constant="12" id="0gD-lt-TnW"/>
+                                                <constraint firstItem="3Pi-LA-6Zh" firstAttribute="leading" secondItem="enR-Pz-LIg" secondAttribute="leadingMargin" constant="3" id="0se-wj-JKT"/>
+                                                <constraint firstItem="qIz-ao-HYY" firstAttribute="leading" secondItem="mWc-oc-L1M" secondAttribute="leading" id="7a0-QG-xSk"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="qIz-ao-HYY" secondAttribute="bottom" constant="6.5" id="81L-1D-un8"/>
+                                                <constraint firstItem="qIz-ao-HYY" firstAttribute="top" secondItem="mWc-oc-L1M" secondAttribute="bottom" constant="21" id="USB-IT-ALF"/>
+                                                <constraint firstItem="mWc-oc-L1M" firstAttribute="leading" secondItem="3Pi-LA-6Zh" secondAttribute="trailing" constant="8" symbolic="YES" id="kaF-Jb-CAB"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="3Pi-LA-6Zh" secondAttribute="bottom" constant="-3.5" id="vva-5D-XAL"/>
+                                                <constraint firstItem="3Pi-LA-6Zh" firstAttribute="top" secondItem="enR-Pz-LIg" secondAttribute="topMargin" id="wlH-Fs-FWa"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="squirrelDescLabel" destination="qIz-ao-HYY" id="jA1-CY-ySB"/>
+                                            <outlet property="squirrelImage" destination="3Pi-LA-6Zh" id="DMd-7W-yT9"/>
+                                            <outlet property="squirrelTitleLabel" destination="mWc-oc-L1M" id="grc-qC-4ed"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

@@ -11,7 +11,7 @@
 
 @implementation ASASquirrelManager
 
-#define ENDPOINT @"https://mobile.wolfgang.com/Squirrel/squirrel.json"
+#define ENDPOINT @"https://mobile.wolfgang.com/Squirrel"
 
 static ASASquirrelManager * _instance;
 
@@ -37,8 +37,9 @@ static ASASquirrelManager * _instance;
     return request;
 }
 
+
 -(void)listSquirrels:(finishAction)finish{
-    NSURLRequest* request = [self createURLWithPath:ENDPOINT Method:@"GET" Param:nil];
+    NSURLRequest* request = [self createURLWithPath:@"/squirrel.json" Method:@"GET" Param:nil];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue new] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         
         if (finish==nil) {
@@ -62,7 +63,7 @@ static ASASquirrelManager * _instance;
         finish(@"ERROR", nil);
         return;
     }
-    NSURLRequest* request = [self createURLWithPath:ENDPOINT Method:@"GET" Param:nil];
+    NSURLRequest* request = [self createURLWithPath:squirrelURL Method:@"GET" Param:nil];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue new] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         
         if (finish==nil) {

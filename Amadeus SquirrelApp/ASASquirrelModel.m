@@ -16,14 +16,33 @@
 
 @implementation ASASquirrelModel
 
-
+-(NSString*)description{
+    
+    return [NSString stringWithFormat:@"Title: %@\nDesc::%@",self.title, self.desc];
+}
 
 
 -(void)setSquirrelInfoWithDict:(NSDictionary *)dict{
-    self.title             = nilOrJSONObjectForKey(dict, @"author");
-    self.desc              = nilOrJSONObjectForKey(dict, @"categories");
     self.title             = nilOrJSONObjectForKey(dict, @"title");
+    self.desc              = nilOrJSONObjectForKey(dict, @"desc");
+    self.url               = nilOrJSONObjectForKey(dict, @"url");
     self.image             = nilOrJSONObjectForKey(dict, @"image");
+}
+
+
+-(NSString *)URLEncodedString{
+    NSMutableString* urlencodedstr = [NSMutableString new];
+    if (self.title) {
+        [urlencodedstr appendFormat:@"title=%@&", [self urlencode:self.title]];
+    }
+    if (self.desc) {
+        [urlencodedstr appendFormat:@"desc=%@&", [self urlencode:self.desc]];
+    }
+    if (urlencodedstr.length>0) {
+        //Remove the last & symbol
+        [urlencodedstr deleteCharactersInRange:NSMakeRange(urlencodedstr.length-1, 1)];
+    }
+    return [NSString stringWithString:urlencodedstr];
 }
 
 

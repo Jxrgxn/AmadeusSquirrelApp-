@@ -12,7 +12,7 @@
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *url;
 @property (nonatomic, strong) NSString *desc;
-@property (nonatomic, strong) UIImageView *image;
+@property (nonatomic, strong) NSString *image;
 
 /**
  * Setup the squirrel entry info with given dictionary.
@@ -23,6 +23,7 @@
  * Returns a string containing this string information that is URL encoded.
  * Note the url parameter is not included.
  */
+-(NSString*)URLEncodedString;
 
 
 @end

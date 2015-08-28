@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ASASquirrelInformationTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *squirrelTitleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *squirrelImage;
+@property (weak, nonatomic) IBOutlet UILabel *squirrelDescLabel;
 
 @end
