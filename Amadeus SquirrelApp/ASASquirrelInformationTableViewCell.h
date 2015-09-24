@@ -12,5 +12,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *squirrelTitleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *squirrelImage;
 @property (weak, nonatomic) IBOutlet UILabel *squirrelDescLabel;
+@property (weak, nonatomic) NSURL *squirrelURL;
 
 @end

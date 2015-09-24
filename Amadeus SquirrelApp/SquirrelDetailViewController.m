@@ -8,7 +8,7 @@
 
 #import "SquirrelDetailViewController.h"
 
-@interface SquirrelDetailViewController ()
+@interface SquirrelDetailViewController () <UIWebViewDelegate> 
 
 @end
 
@@ -16,7 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.urlstr = [NSURL URLWithString:self.urlString];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:self.urlstr];
+    [self.webView loadRequest:requestObj];
 }
 
 - (void)didReceiveMemoryWarning {

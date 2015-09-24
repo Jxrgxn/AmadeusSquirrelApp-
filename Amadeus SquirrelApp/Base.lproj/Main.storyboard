@@ -24,6 +24,59 @@
             </objects>
             <point key="canvasLocation" x="822" y="807"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="Uiu-JT-LUd">
+            <objects>
+                <navigationController id="sJZ-LA-zNG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="uFo-uK-PgU"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lzl-fM-AcW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Boh-aw-QgV" kind="relationship" relationship="rootViewController" id="tOg-vi-gIu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7z-yW-W8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="-390"/>
+        </scene>
+        <!--Squirrel Detail View Controller-->
+        <scene sceneID="yoD-kP-jSd">
+            <objects>
+                <viewController storyboardIdentifier="webViewPush" id="aCp-gi-bfg" customClass="SquirrelDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pxf-u4-t7s"/>
+                        <viewControllerLayoutGuide type="bottom" id="ulD-Db-kro"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MhQ-of-64e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngb-ED-SyY">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="aCp-gi-bfg" id="ZYq-KP-cKR"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ngb-ED-SyY" secondAttribute="trailing" id="CgA-De-hy7"/>
+                            <constraint firstItem="ngb-ED-SyY" firstAttribute="top" secondItem="pxf-u4-t7s" secondAttribute="bottom" id="EDG-B5-8bW"/>
+                            <constraint firstItem="ngb-ED-SyY" firstAttribute="leading" secondItem="MhQ-of-64e" secondAttribute="leading" id="HEW-hs-Gsb"/>
+                            <constraint firstItem="ngb-ED-SyY" firstAttribute="bottom" secondItem="ulD-Db-kro" secondAttribute="top" id="xpR-BW-6Ur"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="ngb-ED-SyY" id="BGj-0f-kdT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kbc-Fh-wRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1943" y="-576"/>
+        </scene>
         <!--Item 1-->
         <scene sceneID="Dde-dE-Kt6">
             <objects>
@@ -55,7 +108,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIz-ao-HYY">
                                                     <rect key="frame" x="104" y="62" width="479" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWc-oc-L1M">
@@ -64,7 +117,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="XhQ-eS-bEM"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -84,6 +137,7 @@
                                             <outlet property="squirrelDescLabel" destination="qIz-ao-HYY" id="jA1-CY-ySB"/>
                                             <outlet property="squirrelImage" destination="3Pi-LA-6Zh" id="DMd-7W-yT9"/>
                                             <outlet property="squirrelTitleLabel" destination="mWc-oc-L1M" id="grc-qC-4ed"/>
+                                            <segue destination="aCp-gi-bfg" kind="show" identifier="webviewpush" trigger="accessoryAction" id="b32-bL-o1Q"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -102,13 +156,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Hap-z4-Vri"/>
+                    <navigationItem key="navigationItem" id="WFS-1p-jky"/>
                     <connections>
                         <outlet property="squirrelListTableView" destination="QBy-ce-l8C" id="mBa-cK-IyH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Suo-Ye-kRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="155"/>
+            <point key="canvasLocation" x="1121" y="-367"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DJC-Uy-kBm">
@@ -121,8 +176,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Boh-aw-QgV" kind="relationship" relationship="viewControllers" id="dSc-m1-OcM"/>
-                        <segue destination="1Pr-uF-Hsj" kind="relationship" relationship="viewControllers" id="HRj-pk-ILs"/>
+                        <segue destination="sJZ-LA-zNG" kind="relationship" relationship="viewControllers" id="hLJ-Ea-XOS"/>
+                        <segue destination="1Pr-uF-Hsj" kind="relationship" relationship="viewControllers" id="cv4-bz-5OF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh3-Zg-d3B" userLabel="First Responder" sceneMemberID="firstResponder"/>

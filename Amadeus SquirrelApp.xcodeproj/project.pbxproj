@@ -17,6 +17,7 @@
 		2565BF361B8F892B00A38A8D /* ASAAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2565BF351B8F892B00A38A8D /* ASAAboutViewController.m */; };
 		2565BF3A1B90A13C00A38A8D /* ASASquirrelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2565BF391B90A13C00A38A8D /* ASASquirrelModel.m */; };
 		259E80F91B90C33E0059F680 /* ASASquirrelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E80F81B90C33E0059F680 /* ASASquirrelManager.m */; };
+		259E80FC1B9104DE0059F680 /* SquirrelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 259E80FB1B9104DE0059F680 /* SquirrelDetailViewController.m */; };
 		25E9F81A1B90AFA700B4F2FB /* ASASquirrelInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E9F8191B90AFA700B4F2FB /* ASASquirrelInformationTableViewCell.m */; };
 		A83F9DD8443F12C398F2C74F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE72655D3C9FD03B2CBD99EB /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,8 @@
 		2565BF391B90A13C00A38A8D /* ASASquirrelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASASquirrelModel.m; sourceTree = "<group>"; };
 		259E80F71B90C33E0059F680 /* ASASquirrelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASASquirrelManager.h; sourceTree = "<group>"; };
 		259E80F81B90C33E0059F680 /* ASASquirrelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASASquirrelManager.m; sourceTree = "<group>"; };
+		259E80FA1B9104DE0059F680 /* SquirrelDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquirrelDetailViewController.h; sourceTree = "<group>"; };
+		259E80FB1B9104DE0059F680 /* SquirrelDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquirrelDetailViewController.m; sourceTree = "<group>"; };
 		25E9F8181B90AFA700B4F2FB /* ASASquirrelInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASASquirrelInformationTableViewCell.h; sourceTree = "<group>"; };
 		25E9F8191B90AFA700B4F2FB /* ASASquirrelInformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASASquirrelInformationTableViewCell.m; sourceTree = "<group>"; };
 		AE72655D3C9FD03B2CBD99EB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +159,8 @@
 				2565BF161B8F7C9700A38A8D /* ASAInformationTabViewController.m */,
 				2565BF341B8F892B00A38A8D /* ASAAboutViewController.h */,
 				2565BF351B8F892B00A38A8D /* ASAAboutViewController.m */,
+				259E80FA1B9104DE0059F680 /* SquirrelDetailViewController.h */,
+				259E80FB1B9104DE0059F680 /* SquirrelDetailViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 			files = (
 				2565BF171B8F7C9700A38A8D /* ASAInformationTabViewController.m in Sources */,
 				2565BF3A1B90A13C00A38A8D /* ASASquirrelModel.m in Sources */,
+				259E80FC1B9104DE0059F680 /* SquirrelDetailViewController.m in Sources */,
 				2565BF141B8F7C9700A38A8D /* AppDelegate.m in Sources */,
 				259E80F91B90C33E0059F680 /* ASASquirrelManager.m in Sources */,
 				2565BF361B8F892B00A38A8D /* ASAAboutViewController.m in Sources */,

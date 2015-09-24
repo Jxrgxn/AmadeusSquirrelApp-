@@ -10,4 +10,10 @@
 
 @interface SquirrelDetailViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (nonatomic, strong) NSURL *urlstr;
+@property (nonatomic, strong) NSString *urlString; 
+
+
+
 @end

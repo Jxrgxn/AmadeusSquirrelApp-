@@ -11,6 +11,8 @@
 #import "ASASquirrelManager.h"
 #import "ASASquirrelInformationTableViewCell.h"
 #import <ODRefreshControl/ODRefreshControl.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import "SquirrelDetailViewController.h"
 
 @interface ASAInformationTabViewController (){
     NSMutableArray *squirrelArray;
@@ -34,15 +36,10 @@
 }
 
 
-
-
--(void)viewWillAppear:(BOOL)animated
-{
-
-}
-
+#pragma Setting up the Squirrel TableView
 -(void)setUpSquirrelList
 {
+
     __weak UITableView* weaktable = self.squirrelListTableView;
     [[ASASquirrelManager instance] listSquirrels:^(NSString *response, NSMutableArray *result) {
     
@@ -67,14 +64,12 @@
         ASASquirrelModel *squirrelLocal = squirrelArray[indexPath.row];
         cell.squirrelTitleLabel.text = squirrelLocal.title;
         cell.squirrelDescLabel.text = squirrelLocal.desc;
-//        cell.squirrelImage = squirrelLocal.image
     
-    NSData *imageData = [[NSData alloc] initWithContentsOfURL:
+        NSData *imageData = [[NSData alloc] initWithContentsOfURL:
                          [NSURL URLWithString:squirrelLocal.image]];
-    cell.squirrelImage.image = [UIImage imageWithData:imageData];
+        cell.squirrelImage.image = [UIImage imageWithData:imageData];
 
-    return cell;
-
+        return cell;
 }
 
 
@@ -86,9 +81,30 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return squirrelArray.count;
-
 }
 
+#pragma Setting up data to be passed
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"webviewpush" sender:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"webviewpush"]) {
+        
+        // Get destination view
+        SquirrelDetailViewController *vc = [segue destinationViewController];
+        
+        NSIndexPath *path = [self.squirrelListTableView indexPathForSelectedRow];
+        
+        ASASquirrelModel *squirrelWebLocal = squirrelArray[path.row];
+        NSString *squirrelURLString = squirrelWebLocal.url;
+        vc.urlString = squirrelURLString;
+        
+    }
+}
+
+#pragma Refresh UI Detail Code
 
 -(void)dragToRefreshAction:(id)sender{
     
@@ -108,6 +124,9 @@
         
     }];
 }
+
+
+
 
 
 @end
